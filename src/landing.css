@@ -1,0 +1,114 @@
+.hero-overlay {
+  position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.hero-overlay ::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  background-color: #131422e0;
+    top: 0;
+    left: 0;
+}
+
+.api {
+  background-image: url("./assets/SVG/api.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ant-tabs-nav {
+  flex-wrap: nowrap;
+    /* Prevent wrapping */
+    overflow-x: auto;
+    /* Enable horizontal scroll */
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling for iOS */
+    scroll-behavior: smooth;
+    /* Smooth scroll for all devices */
+  &:before {
+      border: none !important;
+    /* Remove default underline */
+  }
+  }
+.ant-tabs-nav-list {
+  padding: 7px;
+  background: #ededed;
+    border-radius: 37px;
+  overflow-x: scroll;
+  }
+.ant-tabs-tab {
+  width: 150px;
+  border-radius: 37px;
+  padding: 6px 6px !important;
+  text-align: center !important;
+  font-size: 24px;
+  font-weight: 700;
+  color: #8b8787 !important;
+    flex: none;
+    margin: 0 8px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+.ant-tabs-tab-active {
+  background-color: white !important;
+  color: #288ebd;
+  }
+.ant-tabs-tab-btn {
+  width: 100%;
+  text-align: center !important;
+}
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .ant-tabs-tab {
+    width: 100px;
+    /* Adjust width for smaller screens */
+    font-size: 18px;
+    /* Reduce font size */
+    padding: 4px 4px !important;
+  }
+
+  .ant-tabs-nav-list {
+    padding: 5px;
+  }
+}
+
+.ant-tabs-nav-list::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(90%);
+      /* Start from the first set of images */
+    }
+
+    100% {
+    transform: translateX(-100%);
+      /* Move through both sets of images */
+    }
+                                                                                                                                }
+                                                                
+                                                                                                                                .marquee {
+                                                                                                                                  display: flex;
+                                                                                                                                  align-items: center;
+                                                                                                                                  white-space: nowrap;
+                                                                                                                                  overflow: hidden;
+                                                                                                                                }
+                                                                
+                                                                                                                                .marquee__content {
+                                                                                                                                  display: flex;
+  animation: marquee 20s linear infinite;
+    /* Adjust the time for your desired speed */
+    width: max-content;
+    /* Allow content to take up as much width as needed */
+  }
+  
+  .marquee__content img {
+  margin-right: 20px;
+    /* Add spacing between images */
+  }
