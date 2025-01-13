@@ -72,9 +72,9 @@ function Landing() {
       <section className=" h-[50svh] md:h-svh max-h-[900px] relative">
         <div className="absolute hero-overlay">
           <Lottie options={defaultOptions} height={"100%"} width={"100%"} />
-        </div>
+          </div>
 
-        <div className="absolute z-10 flex flex-col items-center justify-center w-full h-full text-center ">
+        <div className="absolute top-0 z-10 flex flex-col items-center justify-center w-full h-full text-center ">
           <h3 className="mb-10 text-base font-bold text-primary">
             Empowering Nigeria's Financial Future
           </h3>
@@ -82,6 +82,7 @@ function Landing() {
             We are your Digital Solution for Seamless Fintech Innovation
           </h1>
         </div>
+        
       </section>
       {/**************************************************************************** */}
 
